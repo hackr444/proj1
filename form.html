@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Estilizando formulários com CSS - DevMedia</title>
+    <link rel="stylesheet" href="estilo.css">
+</head> 
+<body> 
+<form action="euquero.php" name="meuForm" method="post" id="formulario"> <!-- Action mostra a ação do meu formulário-- Get informaçoes pequenas que possam ser trasnferidas pelo link, agr post existem várias informações a serem transferidas, e por isso ficam guardadas num espaço de memória!-->
+    <div class="box"> 
+        <h1>Formulario de Contato :</h1>
+  
+        <label> 
+            <span>Nome:</span>
+            <input type="text" class="input_text" name="nome" id="name" required/> <!--Name é importante pra nós-->
+  
+        </label>
+        
+        <label>
+                <span>CPF:</span>
+                <input type="text" class="input_text" name="cpf" id="txtcpf" required/>
+             </label>
+  
+        <label>
+            <span>E-mail:</span>
+            <input type="email" class="input_text" name="email" id="email" required/>
+         </label>
+  
+          
+        <button type="submit" name="btnEnviar" class="button">Eu quero!</button>
+    </div>
+</form> 
+</body>
+</html>
